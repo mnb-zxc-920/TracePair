@@ -16,6 +16,8 @@ python tracepair.py demo --out my-demo
 
 双击 `my-demo/report.html`。演示数字全部是合成数据，用于展示界面，不代表真实提升。部分 macOS/Linux 系统需把命令里的 `python` 换成 `python3`。
 
+没有 Git 时，从 [v0.1.0 下载页](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0) 下载 `tracepair-v0.1.0-source.zip` 并解压，在解压后的 `TracePair-0.1.0` 文件夹中打开终端，运行相同的 demo 命令。[完整上手步骤](getting-started.zh-CN.md) 包含日志选择和常见问题。
+
 然后比较自己的两份日志：
 
 ```powershell
@@ -23,6 +25,8 @@ python tracepair.py compare "C:\my logs\run-a.jsonl" "C:\my logs\run-b.jsonl" --
 ```
 
 输出目录必须是新目录。TracePair 不覆盖已有报告，不修改输入文件，也不自动扫描你的历史会话。为得到稳定快照，优先选择已结束写入的日志。
+
+**日志在哪里？** 默认会话目录是 `~/.codex/sessions`，归档会话在 `~/.codex/archived_sessions`；设置过 `CODEX_HOME` 时，使用该目录中的对应子文件夹。这些位置来自 [OpenAI 官方故障排除文档](https://learn.chatgpt.com/docs/reference/troubleshooting#feedback-and-logs)。在 Windows 文件资源管理器地址栏可打开默认路径 `%USERPROFILE%\.codex\sessions`，手动选择要比较的两份会话 `.jsonl`。不要把 `history.jsonl` 当成这里需要的逐会话运行日志。
 
 ## 报告怎样读
 

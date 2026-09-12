@@ -22,6 +22,8 @@ python tracepair.py demo --out my-demo
 
 Open `my-demo/report.html` in your browser. Everything needed by that report is inside the file. On systems where Python is named `python3`, use that command instead.
 
+Without Git, download `tracepair-v0.1.0-source.zip` from the [release](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0), extract it, open a terminal in the extracted `TracePair-0.1.0` folder, and run the same `python tracepair.py demo --out my-demo` command. [Step-by-step first use](docs/getting-started.md) · [中文上手](docs/getting-started.zh-CN.md).
+
 To compare your own logs:
 
 ```sh
@@ -35,6 +37,8 @@ python tracepair.py compare "C:\my logs\run-a.jsonl" "C:\my logs\run-b.jsonl" --
 ```
 
 Choose two explicit Codex rollout files from your own machine. TracePair does not scan your session directory or upload logs. Use a new output directory each time; existing directories are never replaced. For a stable report, use logs that are no longer being written.
+
+**Where are the logs?** Codex's default session directory is `~/.codex/sessions`; archived sessions are in `~/.codex/archived_sessions`. If you set `CODEX_HOME`, use its `sessions` or `archived_sessions` subfolder instead. These locations are documented in [OpenAI's troubleshooting guide](https://learn.chatgpt.com/docs/reference/troubleshooting#feedback-and-logs). Select the two session `.jsonl` files you intend to compare; `history.jsonl` is not the per-session rollout input expected here. The [first-use guide](docs/getting-started.md#choose-your-two-logs) explains Windows paths, other environments, and missing-data messages.
 
 ## What you get
 
