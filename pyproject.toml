@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tracepair"
+version = "0.1.0"
+description = "See what changed between two Codex runs. Locally."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "TracePair contributors"}]
+keywords = ["codex", "jsonl", "tokens", "comparison", "offline"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+dependencies = []
+
+[project.scripts]
+tracepair = "tracepair.cli:main"
+
+[project.urls]
+Repository = "https://github.com/mnb-zxc-920/TracePair"
+Issues = "https://github.com/mnb-zxc-920/TracePair/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

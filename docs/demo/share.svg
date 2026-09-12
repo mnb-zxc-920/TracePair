@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">TracePair: two Codex runs compared</title><desc id="desc">SYNTHETIC DEMO · MADE-UP NUMBERS. Token differences do not prove savings or equal output quality.</desc>
+<rect width="1200" height="630" fill="#f5f3ec"/><g fill="#192d31" font-family="Segoe UI,Arial,sans-serif"><rect x="54" y="38" width="10" height="27" rx="2" fill="#197869"/><rect x="69" y="49" width="10" height="16" rx="2"/>
+<text x="94" y="63" font-size="29" font-weight="700">TracePair</text><text x="1145" y="58" text-anchor="end" font-size="12" letter-spacing="1.8">SYNTHETIC DEMO · MADE-UP NUMBERS</text><path d="M54 91H1145" stroke="#d9ded7"/>
+<text x="54" y="168" font-size="49" font-weight="700" letter-spacing="-1.5">Two runs. See what changed.</text><text x="54" y="219" font-size="20" fill="#657173">A local comparison of native Codex logs. No API key. No hooks.</text>
+<g transform="translate(54,270)"><rect width="347" height="193" rx="14" fill="#fffefa" stroke="#d9ded7"/>
+<text x="22" y="36" font-size="16" fill="#657173">Input tokens</text><text x="22" y="66" font-size="12" fill="#657173">RUN A</text><text x="185" y="66" font-size="12" fill="#657173">RUN B</text>
+<text x="22" y="110" font-size="34" font-family="Consolas,monospace">52.0k</text><text x="185" y="110" font-size="34" font-family="Consolas,monospace">37.0k</text>
+<text x="22" y="157" font-size="16" fill="#197869">28.8% fewer</text></g><g transform="translate(421,270)"><rect width="347" height="193" rx="14" fill="#fffefa" stroke="#d9ded7"/>
+<text x="22" y="36" font-size="16" fill="#657173">Uncached input</text><text x="22" y="66" font-size="12" fill="#657173">RUN A</text><text x="185" y="66" font-size="12" fill="#657173">RUN B</text>
+<text x="22" y="110" font-size="34" font-family="Consolas,monospace">16.0k</text><text x="185" y="110" font-size="34" font-family="Consolas,monospace">13.0k</text>
+<text x="22" y="157" font-size="16" fill="#197869">18.8% fewer</text></g><g transform="translate(788,270)"><rect width="347" height="193" rx="14" fill="#fffefa" stroke="#d9ded7"/>
+<text x="22" y="36" font-size="16" fill="#657173">Output tokens</text><text x="22" y="66" font-size="12" fill="#657173">RUN A</text><text x="185" y="66" font-size="12" fill="#657173">RUN B</text>
+<text x="22" y="110" font-size="34" font-family="Consolas,monospace">4.0k</text><text x="185" y="110" font-size="34" font-family="Consolas,monospace">3.5k</text>
+<text x="22" y="157" font-size="16" fill="#197869">12.5% fewer</text></g><text x="54" y="507" font-size="15" fill="#657173">Read the full report for accounting gaps and comparison limits.</text><text x="54" y="540" font-size="14">Differences do not prove savings, productivity, or equal output quality.</text><path d="M54 568H1145" stroke="#d9ded7"/>
+<text x="54" y="601" font-size="13" fill="#197869">github.com/mnb-zxc-920/TracePair</text><text x="1145" y="601" text-anchor="end" font-size="13" fill="#657173">8 → 6 observed tool calls · v0.1.0</text></g></svg>

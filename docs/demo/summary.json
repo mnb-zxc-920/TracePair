@@ -1,0 +1,95 @@
+{
+  "schema": "tracepair.comparison.v1",
+  "version": "0.1.0",
+  "synthetic": true,
+  "runs": {
+    "A": {
+      "tokens": {
+        "input_tokens": 52000,
+        "cached_input_tokens": 36000,
+        "uncached_input_tokens": 16000,
+        "output_tokens": 4000,
+        "reasoning_output_tokens": 2500,
+        "total_tokens": 56000
+      },
+      "quality": "observed",
+      "coverage": "from_first_usage",
+      "warnings": [],
+      "tool_calls": 8,
+      "tool_categories": {
+        "shell": 4,
+        "files": 2,
+        "web": 0,
+        "agents": 0,
+        "code": 2,
+        "other": 0
+      },
+      "duplicate_snapshots": 1,
+      "duplicate_tool_calls": 0,
+      "token_snapshots": 3,
+      "malformed_lines": 0,
+      "elapsed_seconds": 185,
+      "model_count": 1
+    },
+    "B": {
+      "tokens": {
+        "input_tokens": 37000,
+        "cached_input_tokens": 24000,
+        "uncached_input_tokens": 13000,
+        "output_tokens": 3500,
+        "reasoning_output_tokens": 2200,
+        "total_tokens": 40500
+      },
+      "quality": "observed",
+      "coverage": "from_first_usage",
+      "warnings": [],
+      "tool_calls": 6,
+      "tool_categories": {
+        "shell": 2,
+        "files": 2,
+        "web": 0,
+        "agents": 0,
+        "code": 2,
+        "other": 0
+      },
+      "duplicate_snapshots": 1,
+      "duplicate_tool_calls": 0,
+      "token_snapshots": 3,
+      "malformed_lines": 0,
+      "elapsed_seconds": 144,
+      "model_count": 1
+    }
+  },
+  "changes": {
+    "input_tokens": {
+      "absolute": -15000,
+      "percent": -28.8
+    },
+    "cached_input_tokens": {
+      "absolute": -12000,
+      "percent": -33.3
+    },
+    "uncached_input_tokens": {
+      "absolute": -3000,
+      "percent": -18.8
+    },
+    "output_tokens": {
+      "absolute": -500,
+      "percent": -12.5
+    },
+    "reasoning_output_tokens": {
+      "absolute": -300,
+      "percent": -12.0
+    },
+    "total_tokens": {
+      "absolute": -15500,
+      "percent": -27.7
+    }
+  },
+  "model_relation": "matching",
+  "comparison_notes": [
+    "The recorded spans differ; idle time and task complexity are not measured."
+  ],
+  "interpretation": "Differences describe these logs. They do not prove savings, productivity, task completion, or equal output quality.",
+  "privacy": "Exports contain aggregate counts and fixed notes, not raw conversations, paths, session IDs, model names, or custom tool names. Aggregates can still be sensitive; review before sharing."
+}
