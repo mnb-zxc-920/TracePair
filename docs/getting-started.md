@@ -9,7 +9,7 @@ Start with the built-in demo. It needs no Codex account, API key or personal log
 Choose one way to get the source:
 
 - With Git: run `git clone https://github.com/mnb-zxc-920/TracePair.git`, then `cd TracePair`.
-- Without Git: download `tracepair-v0.1.0-source.zip` from the [release page](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0), extract it, and open a terminal in the extracted `TracePair-0.1.0` folder. This folder contains `tracepair.py`. Do not run the command inside an unopened ZIP or from the parent Downloads folder.
+- Without Git: download `tracepair-v0.1.1-source.zip` from the [release page](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.1), extract it, and open a terminal in the extracted `TracePair-0.1.1` folder. This folder contains `tracepair.py`. Do not run the command inside an unopened ZIP or from the parent Downloads folder.
 
 Run:
 
@@ -52,9 +52,9 @@ Open `my-comparison/report.html`. The logs stay on your machine. Review aggregat
 | Message or symptom | Next step |
 | --- | --- |
 | Python cannot find `tracepair.py` | Open the terminal in the source folder that contains that file. |
-| `TracePair: unreadable input` | Check both file paths and access permissions. Use files, not a directory. |
+| An input error labeled `Run A` or `Run B` | Check the indicated input: A is the first file and B is the second. Choose an existing readable Codex JSONL file, not a folder; quote paths containing spaces. |
 | `Output directory already exists` | Choose another name, for example `--out my-comparison-2`. Existing reports are preserved. |
-| `invalid time window` | Give ISO 8601 bounds with a timezone, for example `2026-01-01T09:00:00Z` or `2026-01-01T17:00:00+08:00`. When both bounds are set, the end must be later than the start. |
+| `Invalid time window` labeled `Run A` or `Run B` | Check the named `--a-start` / `--a-end` or `--b-start` / `--b-end` options. Give ISO 8601 bounds with a timezone, for example `2026-01-01T09:00:00Z` or `2026-01-01T17:00:00+08:00`. When both are set, the end must be later than the start. Values and paths are omitted from these errors. |
 | `Accounting gaps detected` or `Unknown` | Open the report's **Accounting notes**. A missing field is not a measured zero. |
 | `NO_TOKEN_DATA` | Check that the chosen file is a Codex session rollout. It may contain no usable token snapshots, or the format may be unsupported. |
 | `COUNTER_RESET` or `INVALID_COUNTER` | Totals are withheld because the counters cannot support a reliable total; see the [accounting rules](accounting.md). |

@@ -13,4 +13,4 @@
 <text x="22" y="36" font-size="16" fill="#657173">Output tokens</text><text x="22" y="66" font-size="12" fill="#657173">RUN A</text><text x="185" y="66" font-size="12" fill="#657173">RUN B</text>
 <text x="22" y="110" font-size="34" font-family="Consolas,monospace">4.0k</text><text x="185" y="110" font-size="34" font-family="Consolas,monospace">3.5k</text>
 <text x="22" y="157" font-size="16" fill="#197869">12.5% fewer</text></g><text x="54" y="507" font-size="15" fill="#657173">Read the full report for accounting gaps and comparison limits.</text><text x="54" y="540" font-size="14">Differences do not prove savings, productivity, or equal output quality.</text><path d="M54 568H1145" stroke="#d9ded7"/>
-<text x="54" y="601" font-size="13" fill="#197869">github.com/mnb-zxc-920/TracePair</text><text x="1145" y="601" text-anchor="end" font-size="13" fill="#657173">8 → 6 observed tool calls · v0.1.0</text></g></svg>
+<text x="54" y="601" font-size="13" fill="#197869">github.com/mnb-zxc-920/TracePair</text><text x="1145" y="601" text-anchor="end" font-size="13" fill="#657173">8 → 6 observed tool calls · v0.1.1</text></g></svg>

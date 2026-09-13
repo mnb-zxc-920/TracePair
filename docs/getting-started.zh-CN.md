@@ -9,7 +9,7 @@
 任选一种获取源码的方式：
 
 - 已有 Git：运行 `git clone https://github.com/mnb-zxc-920/TracePair.git`，然后 `cd TracePair`。
-- 没有 Git：在 [下载页](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0) 下载 `tracepair-v0.1.0-source.zip`，解压后，在其中的 `TracePair-0.1.0` 文件夹打开终端。确认这里有 `tracepair.py`，不要在未解压的 ZIP 或上级下载目录里运行。
+- 没有 Git：在 [下载页](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.1) 下载 `tracepair-v0.1.1-source.zip`，解压后，在其中的 `TracePair-0.1.1` 文件夹打开终端。确认这里有 `tracepair.py`，不要在未解压的 ZIP 或上级下载目录里运行。
 
 ```sh
 python tracepair.py demo --out my-demo
@@ -50,9 +50,9 @@ python3 tracepair.py compare "/path/to/run-a.jsonl" "/path/to/run-b.jsonl" --out
 | 提示或现象 | 下一步 |
 | --- | --- |
 | Python 找不到 `tracepair.py` | 在包含这个文件的源码目录重新打开终端。 |
-| `TracePair: unreadable input` | 检查两个文件路径及读取权限，不能传文件夹。 |
+| 标有 `Run A` 或 `Run B` 的输入错误 | 只检查提示对应的输入：A 是第一个文件，B 是第二个。选择存在且可读的 Codex JSONL 文件，不能传文件夹；带空格的路径保留引号。 |
 | `Output directory already exists` | 换一个名称，例如 `--out my-comparison-2`；已有报告会保留。 |
-| `invalid time window` | 使用带时区的 ISO 8601 时间，例如 `2026-01-01T09:00:00Z` 或 `2026-01-01T17:00:00+08:00`；同时设置起止值时，结束必须晚于开始。 |
+| 标有 `Run A` 或 `Run B` 的 `Invalid time window` | 检查提示中的 `--a-start` / `--a-end` 或 `--b-start` / `--b-end`。使用带时区的 ISO 8601 时间，例如 `2026-01-01T09:00:00Z` 或 `2026-01-01T17:00:00+08:00`；同时设置起止值时，结束必须晚于开始。错误提示不回显路径或时间参数值。 |
 | `Accounting gaps detected` 或 `Unknown` | 展开报告的 **Accounting notes**；缺字段不等于测量值为零。 |
 | `NO_TOKEN_DATA` | 核对是否选中了 Codex 会话运行日志。文件可能没有可用计数快照，也可能格式尚不支持。 |
 | `COUNTER_RESET` 或 `INVALID_COUNTER` | 计数证据不足以得到可靠总量，因此被暂扣；参阅[计数说明](accounting.md)。 |

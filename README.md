@@ -22,7 +22,7 @@ python tracepair.py demo --out my-demo
 
 Open `my-demo/report.html` in your browser. Everything needed by that report is inside the file. On systems where Python is named `python3`, use that command instead.
 
-Without Git, download `tracepair-v0.1.0-source.zip` from the [release](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0), extract it, open a terminal in the extracted `TracePair-0.1.0` folder, and run the same `python tracepair.py demo --out my-demo` command. [Step-by-step first use](docs/getting-started.md) · [中文上手](docs/getting-started.zh-CN.md).
+Without Git, download `tracepair-v0.1.1-source.zip` from the [release](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.1), extract it, open a terminal in the extracted `TracePair-0.1.1` folder, and run the same `python tracepair.py demo --out my-demo` command. [Step-by-step first use](docs/getting-started.md) · [中文上手](docs/getting-started.zh-CN.md).
 
 To compare your own logs:
 

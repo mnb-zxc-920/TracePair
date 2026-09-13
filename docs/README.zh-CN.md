@@ -16,7 +16,7 @@ python tracepair.py demo --out my-demo
 
 双击 `my-demo/report.html`。演示数字全部是合成数据，用于展示界面，不代表真实提升。部分 macOS/Linux 系统需把命令里的 `python` 换成 `python3`。
 
-没有 Git 时，从 [v0.1.0 下载页](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.0) 下载 `tracepair-v0.1.0-source.zip` 并解压，在解压后的 `TracePair-0.1.0` 文件夹中打开终端，运行相同的 demo 命令。[完整上手步骤](getting-started.zh-CN.md) 包含日志选择和常见问题。
+没有 Git 时，从 [v0.1.1 下载页](https://github.com/mnb-zxc-920/TracePair/releases/tag/v0.1.1) 下载 `tracepair-v0.1.1-source.zip` 并解压，在解压后的 `TracePair-0.1.1` 文件夹中打开终端，运行相同的 demo 命令。[完整上手步骤](getting-started.zh-CN.md) 包含日志选择和常见问题。
 
 然后比较自己的两份日志：
 

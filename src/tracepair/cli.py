@@ -29,6 +29,20 @@ def _write_report(destination, data):
         raise ParseError('Could not finish writing the report. The new directory may contain partial output; choose another directory after checking it.') from None
 
 
+def _parse_compare_run(path, start, end, label, window):
+    try:
+        return parse_run(path, start=start, end=end)
+    except OSError:
+        text = 'unreadable input'
+    except ParseError as error:
+        text = str(error)
+    if text == 'unreadable input':
+        raise ParseError(f'Cannot read {label}. Choose an existing readable Codex JSONL file, not a folder. Quote paths that contain spaces.') from None
+    if text == 'invalid time window':
+        raise ParseError(f'Invalid time window for {label}. {window} must be ISO 8601 with a timezone, and end must be later than start.') from None
+    raise ParseError(f'Cannot parse {label}.') from None
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog='tracepair', description='See what changed between two Codex JSONL runs. Locally.')
     parser.add_argument('--version', action='version', version=f'TracePair {__version__}')
@@ -52,8 +66,8 @@ def main(argv=None):
                     path.write_text(demo_log(name), encoding='utf-8')
                 a, b = (parse_run(path) for path in paths)
         else:
-            a = parse_run(args.run_a, start=args.a_start, end=args.a_end)
-            b = parse_run(args.run_b, start=args.b_start, end=args.b_end)
+            a = _parse_compare_run(args.run_a, args.a_start, args.a_end, 'Run A', '--a-start/--a-end')
+            b = _parse_compare_run(args.run_b, args.b_start, args.b_end, 'Run B', '--b-start/--b-end')
         data = compare_runs(a, b, synthetic=args.command == 'demo')
         _write_report(args.out, data)
     except (ParseError, OSError):
